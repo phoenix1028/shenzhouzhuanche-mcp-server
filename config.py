@@ -60,8 +60,8 @@ class ShenZhouConfig:
     def __post_init__(self) -> None:
         if self.auth is None:
             # 从环境变量读取认证配置，如果没有则使用测试账号
-            username = os.getenv("SHENZHOU_USERNAME", "18610000000")  # 测试账号
-            password = os.getenv("SHENZHOU_PASSWORD", "18610000000")  # 测试密码
+            username = os.getenv("SHENZHOU_USERNAME", "你的测试账号")  # 测试账号
+            password = os.getenv("SHENZHOU_PASSWORD", "你爹测试密码")  # 测试密码
             enable_interactive = os.getenv("SHENZHOU_INTERACTIVE", "false").lower() == "true"
             
             self.auth = AuthConfig(
