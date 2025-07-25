@@ -43,8 +43,8 @@ class AuthConfig:
 class ShenZhouConfig:
     """神州专车API配置"""
     # 测试环境配置
-    client_id: str = "C2BB2BF800001A0A"
-    client_secret: str = "ktvj3lw2u45sswicg9jp"
+    client_id: str = "你的客户端ID"
+    client_secret: str = "你的客户端密钥"
     redirect_uri: str = "https://www.baidu.com"
     
     # 服务端点
